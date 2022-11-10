@@ -1,0 +1,180 @@
+.GridContainer {
+  display: grid;
+  width: 100%;
+}
+
+.MenuFlex {
+  display: flex;
+}
+.MenuFlex .item {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(22, 62, 37);
+}
+
+body {
+  background-color: rgb(247, 251, 237);
+  width: 90%;
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(22, 62, 37);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(22, 62, 37);
+  text-align: center;
+  margin-top: 70px;
+}
+
+h3 {
+  font-size: 20px;
+  color: rgb(22, 62, 37);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5%;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -10px;
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.flexContainer1 {
+  display: flex;
+  gap: 4%;
+}
+
+.flexContainer1 .item {
+  width: 48%;
+}
+
+.flexContainer {
+  display: flex;
+  margin-top: 4%;
+  width: 100%;
+}
+.flexContainer .item {
+  width: 22%;
+  margin: 0 2%;
+}
+
+.flexContainer .item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 420px) and (max-width: 820px) {
+  .MenuFlex .item {
+    width: 33%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    margin: 4% 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+  .flexContainer .item {
+    flex: 48%;
+    margin: 0;
+  }
+
+  .flexContainer img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    margin: 6% 0;
+  }
+
+  .MenuFlex .item {
+    width: 33%;
+    font-size: 12px;
+  }
+
+  p {
+    width: 100%;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexContainer .item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .flexContainer img {
+    width: 100%;
+  }
+
+  .logo {
+    margin: 0;
+    width: 100%;
+  }
+
+  .game {
+    margin: 0;
+    width: 100%;
+  }
+
+  .center {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .flexContainer1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+
+  .flexContainer1 .item {
+    flex: 50%;
+  }
+}
