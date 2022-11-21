@@ -1,3 +1,8 @@
+.gridContainer {
+  display: grid;
+  width: 100%;
+}
+
 h1 {
   font-size: 3em;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,6 +29,15 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+h5 {
+  color: rgb(247, 251, 237);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  animation-name: textAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 p {
@@ -89,4 +103,84 @@ body {
 
 .source {
   color: rgb(22, 62, 37);
+}
+
+.heroSection {
+  background-color: rgb(22, 62, 37);
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  animation-name: animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+  0% {
+    background-color: rgb(22, 62, 37);
+  }
+  50% {
+    background-color: rgb(247, 251, 237);
+  }
+  100% {
+    background-color: rgb(22, 62, 37);
+  }
+}
+/* 5% {
+    background-color: rgb(45, 81, 59);
+  }
+  10% {
+    background-color: rgb(69, 101, 81);
+  }
+  15% {
+    background-color: rgb(92, 120, 102);
+  }
+  20% {
+    background-color: rgb(115, 139, 124);
+  }
+  25% {
+    background-color: rgb(139, 159, 146);
+  }
+  30% {
+    background-color: rgb(162, 178, 168);
+  }
+  35% {
+    background-color: rgb(185, 197, 190);
+  }
+  40% {
+    background-color: rgb(208, 216, 211);
+  }
+  45% {
+    background-color: rgb(232, 236, 233);
+  }
+  50% {
+    background-color: rgb(255, 255, 255);
+  }
+} */
+
+@keyframes textAnimation {
+  0% {
+    font-size: 0;
+  }
+  50% {
+    font-size: 100px;
+    color: rgb(22, 62, 37);
+  }
+
+  100% {
+    font-size: 0;
+  }
+
+  /* 5% {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+  }
+  10% {
+    font-size: 20px;
+    color: rgb(232, 236, 233);
+  } */
 }
